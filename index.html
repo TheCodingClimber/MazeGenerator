@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="side-banner left"></div>
+    <div class="main-content">
+    <h1>Maze Generator</h1>
+
+  <label for="styleSelect">Maze Style:</label>
+  <select id="styleSelect">
+    <option value="dfs">Depth-First Search (Simple)</option>
+    <option value="prims">Prim’s Algorithm (Organic)</option>
+    <option value="recursive">Recursive Division (Boxy Rooms)</option>
+  </select>
+
+  <label for="sizeSlider">Maze Size (Difficulty): <span id="sizeValue">15</span> x <span id="sizeValueY">15</span></label><br>
+  <input type="range" id="sizeSlider" min="5" max="50" value="15">
+
+  <div class="buttons">
+    <button id="generate">Generate Maze</button>
+    <button id="print">Print as PDF</button>
+  </div>
+
+  <canvas id="mazeCanvas" width="600" height="600"></canvas>
+ </div>
+  <div class="side-banner right"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

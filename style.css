@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+canvas {
+  border: 2px solid #333;
+  background-color: white;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 300px;
+}
+
+.buttons {
+  margin: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.side-banner {
+  width: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.side-banner.left {
+  background-image: url("Batman_Robin.gif");
+}
+
+.side-banner.right {
+  background-image: url("Bacon_Egg.gif");
+}
+
+.main-content {
+  max-width: 700px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+canvas {
+  border: 2px solid #333;
+  background-color: white;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
